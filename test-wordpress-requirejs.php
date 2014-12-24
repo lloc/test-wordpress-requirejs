@@ -25,4 +25,4 @@ function my_script_loader_tag( $tag, $handle, $src ) {
 	return $tag;
 }
 
-add_filter( 'script_loader_tag', 'my_script_loader_tag', 10, 3 );
+add_filter( 'script_loader_tag', __NAMESPACE__ . '\\my_script_loader_tag', 10, 3 );
