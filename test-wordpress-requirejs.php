@@ -19,7 +19,8 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\my_enqueue_script' );
 
 function my_script_loader_tag( $tag, $handle, $src ) {
 	if ( 'requirejs' == $handle ) {
-		$tag = "<script data-main='js/config' type='text/javascript' src='$src'></script>\n";
+		$config = plugins_url( '/js/config.js', __FILE__ );
+		$tag    = "<script data-main='{$config}' type='text/javascript' src='{$src}'></script>\n";
 	}
 
 	return $tag;
