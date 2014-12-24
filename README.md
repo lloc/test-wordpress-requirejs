@@ -1,4 +1,4 @@
-test-wordpress-requirejs
+Test WordPress RequireJS
 ========================
 
-Proof of concept - WordPress / requirejs
+Proof of concept - Using RequireJS In WordPress
