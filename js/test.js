@@ -6,5 +6,5 @@ if (typeof jQuery === 'function') {
 
 define(['jquery'], function ($) {
     console.log('Test loaded!');
-    console.log('First <h1> contains: ' + $('h1').html());
+    console.log('Content of the first <h2> in this document: ' + $('h1').html());
 });
